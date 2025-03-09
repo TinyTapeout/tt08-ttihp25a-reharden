@@ -1,0 +1,140 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1725467580
+<< nmoslvt >>
+rect -208 -200 -108 200
+rect -50 -200 50 200
+rect 108 -200 208 200
+<< ndiff >>
+rect -266 188 -208 200
+rect -266 -188 -254 188
+rect -220 -188 -208 188
+rect -266 -200 -208 -188
+rect -108 188 -50 200
+rect -108 -188 -96 188
+rect -62 -188 -50 188
+rect -108 -200 -50 -188
+rect 50 188 108 200
+rect 50 -188 62 188
+rect 96 -188 108 188
+rect 50 -200 108 -188
+rect 208 188 266 200
+rect 208 -188 220 188
+rect 254 -188 266 188
+rect 208 -200 266 -188
+<< ndiffc >>
+rect -254 -188 -220 188
+rect -96 -188 -62 188
+rect 62 -188 96 188
+rect 220 -188 254 188
+<< poly >>
+rect -208 272 -108 288
+rect -208 238 -192 272
+rect -124 238 -108 272
+rect -208 200 -108 238
+rect -50 272 50 288
+rect -50 238 -34 272
+rect 34 238 50 272
+rect -50 200 50 238
+rect 108 272 208 288
+rect 108 238 124 272
+rect 192 238 208 272
+rect 108 200 208 238
+rect -208 -238 -108 -200
+rect -208 -272 -192 -238
+rect -124 -272 -108 -238
+rect -208 -288 -108 -272
+rect -50 -238 50 -200
+rect -50 -272 -34 -238
+rect 34 -272 50 -238
+rect -50 -288 50 -272
+rect 108 -238 208 -200
+rect 108 -272 124 -238
+rect 192 -272 208 -238
+rect 108 -288 208 -272
+<< polycont >>
+rect -192 238 -124 272
+rect -34 238 34 272
+rect 124 238 192 272
+rect -192 -272 -124 -238
+rect -34 -272 34 -238
+rect 124 -272 192 -238
+<< locali >>
+rect -208 238 -192 272
+rect -124 238 -108 272
+rect -50 238 -34 272
+rect 34 238 50 272
+rect 108 238 124 272
+rect 192 238 208 272
+rect -254 188 -220 204
+rect -254 -204 -220 -188
+rect -96 188 -62 204
+rect -96 -204 -62 -188
+rect 62 188 96 204
+rect 62 -204 96 -188
+rect 220 188 254 204
+rect 220 -204 254 -188
+rect -208 -272 -192 -238
+rect -124 -272 -108 -238
+rect -50 -272 -34 -238
+rect 34 -272 50 -238
+rect 108 -272 124 -238
+rect 192 -272 208 -238
+<< viali >>
+rect -192 238 -124 272
+rect -34 238 34 272
+rect 124 238 192 272
+rect -254 58 -220 171
+rect -96 -171 -62 -58
+rect 62 58 96 171
+rect 220 -171 254 -58
+rect -192 -272 -124 -238
+rect -34 -272 34 -238
+rect 124 -272 192 -238
+<< metal1 >>
+rect -204 272 -112 278
+rect -204 238 -192 272
+rect -124 238 -112 272
+rect -204 232 -112 238
+rect -46 272 46 278
+rect -46 238 -34 272
+rect 34 238 46 272
+rect -46 232 46 238
+rect 112 272 204 278
+rect 112 238 124 272
+rect 192 238 204 272
+rect 112 232 204 238
+rect -260 171 -214 183
+rect -260 58 -254 171
+rect -220 58 -214 171
+rect -260 46 -214 58
+rect 56 171 102 183
+rect 56 58 62 171
+rect 96 58 102 171
+rect 56 46 102 58
+rect -102 -58 -56 -46
+rect -102 -171 -96 -58
+rect -62 -171 -56 -58
+rect -102 -183 -56 -171
+rect 214 -58 260 -46
+rect 214 -171 220 -58
+rect 254 -171 260 -58
+rect 214 -183 260 -171
+rect -204 -238 -112 -232
+rect -204 -272 -192 -238
+rect -124 -272 -112 -238
+rect -204 -278 -112 -272
+rect -46 -238 46 -232
+rect -46 -272 -34 -238
+rect 34 -272 46 -238
+rect -46 -278 46 -272
+rect 112 -238 204 -232
+rect 112 -272 124 -238
+rect 192 -272 204 -238
+rect 112 -278 204 -272
+<< properties >>
+string gencell sky130_fd_pr__nfet_01v8_lvt
+string library sky130
+string parameters w 2 l 0.5 m 1 nf 3 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_lvt  sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_pr__nfet_g5v0d10v5 sky130_fd_pr__nfet_05v0_nvt  sky130_fd_pr__nfet_03v3_nvt} full_metal 0 viasrc +30 viadrn -30 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
+<< end >>

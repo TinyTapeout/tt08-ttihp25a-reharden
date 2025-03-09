@@ -1,0 +1,33 @@
+| units: 500000 tech: sky130A format: MIT
+x a_n2506_n1366# VDD opout VDD s=23200,858 d=23200,858 l=200 w=800 x=-1989 y=-1339 sky130_fd_pr__pfet_01v8_lvt
+x a_n2506_n1366# a_n2506_n1366# VDD VDD s=23200,858 d=23200,858 l=200 w=800 x=-2247 y=-1339 sky130_fd_pr__pfet_01v8_lvt
+x MINUS a_n603_n1314# opout VSS s=23200,858 d=23200,858 l=800 w=800 x=2887 y=-1313 sky130_fd_pr__nfet_01v8_lvt
+x PLUS a_n603_n1314# a_n2506_n1366# VSS s=46400,1716 d=23200,858 l=800 w=800 x=-544 y=-1313 sky130_fd_pr__nfet_01v8_lvt
+x MINUS a_n603_n1314# opout VSS s=23200,858 d=23200,858 l=800 w=800 x=4603 y=-1313 sky130_fd_pr__nfet_01v8_lvt
+x in VSS a_n603_n1314# VSS s=23200,916 d=11600,458 l=100 w=400 x=6858 y=-1111 sky130_fd_pr__nfet_01v8_lvt
+x a_n2506_n1366# VDD a_n2506_n1366# VDD s=46400,1716 d=23200,858 l=200 w=800 x=-2505 y=-1339 sky130_fd_pr__pfet_01v8_lvt
+x PLUS a_n2506_n1366# a_n603_n1314# VSS s=23200,858 d=23200,858 l=800 w=800 x=313 y=-1313 sky130_fd_pr__nfet_01v8_lvt
+x MINUS opout a_n603_n1314# VSS s=23200,858 d=46400,1716 l=800 w=800 x=5461 y=-1313 sky130_fd_pr__nfet_01v8_lvt
+x in a_n603_n1314# VSS VSS s=11600,458 d=11600,458 l=100 w=400 x=7016 y=-1111 sky130_fd_pr__nfet_01v8_lvt
+x PLUS a_n2506_n1366# a_n603_n1314# VSS s=23200,858 d=23200,858 l=800 w=800 x=2029 y=-1313 sky130_fd_pr__nfet_01v8_lvt
+x in VSS in VSS s=11600,458 d=23200,916 l=100 w=400 x=7174 y=-1111 sky130_fd_pr__nfet_01v8_lvt
+x a_n2506_n1366# opout VDD VDD s=23200,858 d=46400,1716 l=200 w=800 x=-1731 y=-1339 sky130_fd_pr__pfet_01v8_lvt
+x MINUS opout a_n603_n1314# VSS s=23200,858 d=23200,858 l=800 w=800 x=3745 y=-1313 sky130_fd_pr__nfet_01v8_lvt
+x PLUS a_n603_n1314# a_n2506_n1366# VSS s=23200,858 d=23200,858 l=800 w=800 x=1171 y=-1313 sky130_fd_pr__nfet_01v8_lvt
+C VDD a_n2506_n1366# 2.9
+C PLUS a_n2506_n1366# 3.0
+C MINUS opout 2.5
+R in 2143
+C MINUS0 7.0
+R MINUS 1960
+C PLUS0 6.5
+R PLUS 1960
+C opout0 3.7
+R opout 7259
+C VDD0 8.8
+R VDD 12804
+R VSS 3129
+C a_n603_n1314#0 3.7
+R a_n603_n1314# 12168
+C a_n2506_n1366#0 3.6
+R a_n2506_n1366# 8885

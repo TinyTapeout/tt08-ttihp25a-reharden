@@ -1,0 +1,56 @@
+** sch_path: /home/ttuser/test0/tt08-bgr/xschem/opamp.sch
+**.subckt opamp
+XM4 OUT MINUS net1 VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=16 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net3 PLUS net1 VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=16 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 OUT net3 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.save v(out)
+.save v(net1)
+.save v(net3)
+.save v(net1)
+V1 VDD GND 1.8
+V3 VSS GND 0
+I0 VDD net5 37.345u
+Vmeas net5 net2 0
+.save i(vmeas)
+XM1 net4 net2 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.5 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net2 net2 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.5 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 net3 net3 VDD VDD sky130_fd_pr__pfet_01v8_lvt L=1 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.save v(vdd)
+.save v(net3)
+.save v(vdd)
+.save v(out)
+.save v(net4)
+.save v(vss)
+.save v(net2)
+.save v(vss)
+Vmeas1 net1 net4 0
+.save i(vmeas1)
+V5 MINUS GND 0.75
+V6 PLUS MINUS dc 0 ac 1 0
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+.lib /home/ttuser/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+
+
+.option savecurrents
+.control
+  save all
+  ac dec 20 1k 20G
+  remzerovec
+  write opamp.raw
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

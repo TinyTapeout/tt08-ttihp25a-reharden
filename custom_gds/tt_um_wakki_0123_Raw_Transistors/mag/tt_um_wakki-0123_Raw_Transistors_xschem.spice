@@ -1,0 +1,8 @@
+** sch_path: /home/wakita/tt06-analog-r2r-dac/mag/tt_um_wakki-0123_Raw_Transistors.sch
+.subckt tt_um_wakki-0123_Raw_Transistors ua[0] ua[1] ua[2] ua[3] ua[4] VDPWR VGND
+*.PININFO ua[0]:I ua[1]:I ua[2]:I ua[3]:I ua[4]:I VDPWR:I VGND:I
+XM11 ua[4] ua[1] ua[0] VDPWR sky130_fd_pr__pfet_01v8 L=0.25 W=1 nf=1 m=1
+XM2 ua[4] ua[2] ua[0] VGND sky130_fd_pr__nfet_01v8 L=0.25 W=1 nf=1 m=1
+XM1 ua[4] ua[3] ua[0] VGND sky130_fd_pr__nfet_01v8 L=0.25 W=1 nf=1 m=1
+.ends
+.end

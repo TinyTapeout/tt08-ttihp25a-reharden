@@ -1,0 +1,11 @@
+* NGSPICE file created from snake.ext - technology: sky130A
+
+.subckt snake VPWR VGND VOUT
+X0 VGND VOUT 0 sky130_fd_pr__res_high_po_0p35 l=19.460295k
+X1 VOUT VPWR 0 sky130_fd_pr__res_high_po_0p35 l=926.995
+C0 VPWR VOUT 0.177677f
+C1 VGND 0 0.422347f
+C2 VOUT 0 0.27047f
+C3 VPWR 0 0.284715f
+.ends
+

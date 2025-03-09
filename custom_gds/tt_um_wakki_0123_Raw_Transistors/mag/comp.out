@@ -1,0 +1,153 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_EA9ZG2 in circuit tt_um_wakki_0123_Raw_Transistors (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_EDT3T7 in circuit tt_um_wakki_0123_Raw_Transistors (0)(1 instance)
+
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: clk
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ena
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: rst_n
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ua[5]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ua[6]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ua[7]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ui_in[0]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ui_in[1]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ui_in[2]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ui_in[3]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ui_in[4]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ui_in[5]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ui_in[6]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: ui_in[7]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_in[0]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_in[1]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_in[2]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_in[3]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_in[4]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_in[5]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_in[6]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_in[7]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_oe[0]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_oe[1]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_oe[2]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_oe[3]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_oe[4]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_oe[5]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_oe[6]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_oe[7]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_out[0]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_out[1]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_out[2]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_out[3]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_out[4]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_out[5]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_out[6]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uio_out[7]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uo_out[0]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uo_out[1]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uo_out[2]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uo_out[3]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uo_out[4]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uo_out[5]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uo_out[6]
+Cell tt_um_wakki_0123_Raw_Transistors (0) disconnected node: uo_out[7]
+Subcircuit summary:
+Circuit 1: tt_um_wakki_0123_Raw_Transistor |Circuit 2: tt_um_wakki-0123_Raw_Transistor 
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (2)                |sky130_fd_pr__nfet_01v8 (2)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: tt_um_wakki_0123_Raw_Transistor |Circuit 2: tt_um_wakki-0123_Raw_Transistor 
+-------------------------------------------|-------------------------------------------
+VGND                                       |VGND                                       
+ua[1]                                      |ua[1]                                      
+VDPWR                                      |VDPWR                                      
+ua[3]                                      |ua[3]                                      
+ua[2]                                      |ua[2]                                      
+ua[0]                                      |ua[0]                                      
+ua[4]                                      |ua[4]                                      
+clk                                        |(no matching pin)                          
+ena                                        |(no matching pin)                          
+rst_n                                      |(no matching pin)                          
+ua[5]                                      |(no matching pin)                          
+ua[6]                                      |(no matching pin)                          
+ua[7]                                      |(no matching pin)                          
+ui_in[0]                                   |(no matching pin)                          
+ui_in[1]                                   |(no matching pin)                          
+ui_in[2]                                   |(no matching pin)                          
+ui_in[3]                                   |(no matching pin)                          
+ui_in[4]                                   |(no matching pin)                          
+ui_in[5]                                   |(no matching pin)                          
+ui_in[6]                                   |(no matching pin)                          
+ui_in[7]                                   |(no matching pin)                          
+uio_in[0]                                  |(no matching pin)                          
+uio_in[1]                                  |(no matching pin)                          
+uio_in[2]                                  |(no matching pin)                          
+uio_in[3]                                  |(no matching pin)                          
+uio_in[4]                                  |(no matching pin)                          
+uio_in[5]                                  |(no matching pin)                          
+uio_in[6]                                  |(no matching pin)                          
+uio_in[7]                                  |(no matching pin)                          
+uio_oe[0]                                  |(no matching pin)                          
+uio_oe[1]                                  |(no matching pin)                          
+uio_oe[2]                                  |(no matching pin)                          
+uio_oe[3]                                  |(no matching pin)                          
+uio_oe[4]                                  |(no matching pin)                          
+uio_oe[5]                                  |(no matching pin)                          
+uio_oe[6]                                  |(no matching pin)                          
+uio_oe[7]                                  |(no matching pin)                          
+uio_out[0]                                 |(no matching pin)                          
+uio_out[1]                                 |(no matching pin)                          
+uio_out[2]                                 |(no matching pin)                          
+uio_out[3]                                 |(no matching pin)                          
+uio_out[4]                                 |(no matching pin)                          
+uio_out[5]                                 |(no matching pin)                          
+uio_out[6]                                 |(no matching pin)                          
+uio_out[7]                                 |(no matching pin)                          
+uo_out[0]                                  |(no matching pin)                          
+uo_out[1]                                  |(no matching pin)                          
+uo_out[2]                                  |(no matching pin)                          
+uo_out[3]                                  |(no matching pin)                          
+uo_out[4]                                  |(no matching pin)                          
+uo_out[5]                                  |(no matching pin)                          
+uo_out[6]                                  |(no matching pin)                          
+uo_out[7]                                  |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes tt_um_wakki_0123_Raw_Transistors and tt_um_wakki-0123_Raw_Transistors are equivalent.
+
+Final result: Circuits match uniquely.
+.

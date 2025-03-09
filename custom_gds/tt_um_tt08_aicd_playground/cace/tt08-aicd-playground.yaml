@@ -1,0 +1,182 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name:           tt_um_tt08_aicd_playground
+description:    Test design for the AICD course at Graz University of Technology
+PDK:            sky130A
+
+cace_format:    5.2
+
+authorship:
+  designer:         Leo Moser
+  company:          Graz University of Technology
+  creation_date:    July 4, 2024
+  license:          Apache 2.0
+
+paths:
+  root:             ..
+  schematic:        xschem
+  layout:           gds
+  verilog:          verilog
+  netlist:          netlist
+  documentation:    docs
+
+pins:
+    VDPWR:
+        description: Digital 1.8V power supply
+        type: power
+        direction: inout
+    VAPWR:
+        description: Analog 3.3V power supply
+        type: power
+        direction: inout
+    VGND:
+        description: Ground
+        type: ground
+        direction: inout
+    clk:
+        description: Clock input
+        type: signal
+        direction: input
+    ena:
+        description: Enable pin (do not use)
+        type: signal
+        direction: input
+    rst_n:
+        description: Active low reset signal
+        type: signal
+        direction: input
+    ui_in[7:0]:
+        description: Input Pmod
+        type: signal
+        direction: input
+    uio_in[7:0]:
+        description: Input for bidirectional pins
+        type: signal
+        direction: input
+    uio_oe[7:0]:
+        description: Output enable for bidirectional pins
+        type: signal
+        direction: output
+    uio_out[7:0]:
+        description: Output for bidirectional pins
+        type: signal
+        direction: output
+    uo_out[7:0]:
+        description: Output Pmod
+        type: signal
+        direction: output
+    ua[7:0]:
+        description: Analog pins
+        type: signal
+        direction: inout
+
+default_conditions:
+  avdd:
+    description: Analog power supply voltage
+    display: Vdd
+    unit: V
+    typical: 3.3
+  dvdd:
+    description: Digital power supply voltage
+    display: Vdd
+    unit: V
+    typical: 1.8
+  corner:
+    description: Process corner
+    display: Corner
+    typical: tt
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: °C
+    typical: 27
+
+parameters:
+  #transient:
+  #  status: skip
+  #  description: Transient simulation
+  #  display: Transient
+  #  unit: V/V
+  #  tool:
+  #    ngspice:
+  #      template: transient_tb.sch
+
+  magic_area:
+    spec:
+      area:
+        display: Area
+        description: Total circuit layout area
+        unit: µm²
+        maximum:
+          value: any
+      width:
+        display: Width
+        description: Total circuit layout width
+        unit: µm
+        maximum:
+          value: any
+      height:
+        display: Height
+        description: Total circuit layout height
+        unit: µm
+        maximum:
+          value: any
+    tool:
+      magic_area
+
+  magic_drc:
+    description: Magic DRC
+    display: Magic DRC
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+      magic_drc:
+        gds_flatten: true
+
+  netgen_lvs:
+    description: Netgen LVS
+    display: Netgen LVS
+    spec:
+      lvs_errors:
+        maximum:
+          value: 0
+    tool:
+      netgen_lvs:
+        script: run_project_lvs.tcl
+
+  klayout_drc_feol:
+    description: KLayout DRC feol
+    display: KLayout DRC feol
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+        klayout_drc:
+            args: ['-rd', 'feol=true']
+
+  klayout_drc_beol:
+    description: KLayout DRC beol
+    display: KLayout DRC beol
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+        klayout_drc:
+            args: ['-rd', 'beol=true']
+
+  klayout_drc_full:
+    description: KLayout DRC full
+    display: KLayout DRC full
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+        klayout_drc:
+            args: ['-rd', 'feol=true', '-rd', 'beol=true', '-rd', 'offgrid=true']

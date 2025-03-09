@@ -1,0 +1,16 @@
+* NGSPICE file created from tt_um_wakki-0123_Raw_Transistors.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_EA9ZG2 a_n33_n188# a_n185_n274#
+X0 a_25_n100# a_n33_n188# a_n83_n100# a_n185_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.25
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_EDT3T7 a_n33_n197#
+X0 a_25_n100# a_n33_n197# a_n83_n100# w_n221_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.25
+.ends
+
+.subckt tt_um_wakki-0123_Raw_Transistors ua[0] ua[1] ua[2] ua[3] ua[4] VDPWR VGND
+Xsky130_fd_pr__nfet_01v8_EA9ZG2_0 ua[2] VSUBS sky130_fd_pr__nfet_01v8_EA9ZG2
+Xsky130_fd_pr__nfet_01v8_EA9ZG2_1 ua[3] VSUBS sky130_fd_pr__nfet_01v8_EA9ZG2
+Xsky130_fd_pr__pfet_01v8_EDT3T7_0 ua[1] sky130_fd_pr__pfet_01v8_EDT3T7
+.ends
+

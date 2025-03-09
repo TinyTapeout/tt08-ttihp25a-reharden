@@ -1,0 +1,121 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1725492358
+<< pwell >>
+rect -699 -667 699 667
+<< psubdiff >>
+rect -663 597 663 631
+rect -663 535 -629 597
+rect -663 -597 -629 -535
+rect 629 -597 663 597
+rect -663 -631 663 -597
+<< psubdiffcont >>
+rect -663 -535 -629 535
+<< xpolycontact >>
+rect -533 69 -463 501
+rect -533 -501 -463 -69
+rect -367 69 -297 501
+rect -367 -501 -297 -69
+rect -201 69 -131 501
+rect -201 -501 -131 -69
+rect -35 69 35 501
+rect -35 -501 35 -69
+rect 131 69 201 501
+rect 131 -501 201 -69
+rect 297 69 367 501
+rect 297 -501 367 -69
+rect 463 69 533 501
+rect 463 -501 533 -69
+<< xpolyres >>
+rect -533 -69 -463 69
+rect -367 -69 -297 69
+rect -201 -69 -131 69
+rect -35 -69 35 69
+rect 131 -69 201 69
+rect 297 -69 367 69
+rect 463 -69 533 69
+<< locali >>
+rect -663 597 663 631
+rect -663 535 -629 597
+rect -663 -597 -629 -535
+rect 629 -597 663 597
+rect -663 -631 663 -597
+<< viali >>
+rect -517 86 -479 483
+rect -351 86 -313 483
+rect -185 86 -147 483
+rect -19 86 19 483
+rect 147 86 185 483
+rect 313 86 351 483
+rect 479 86 517 483
+rect -517 -483 -479 -86
+rect -351 -483 -313 -86
+rect -185 -483 -147 -86
+rect -19 -483 19 -86
+rect 147 -483 185 -86
+rect 313 -483 351 -86
+rect 479 -483 517 -86
+<< metal1 >>
+rect -523 483 -473 495
+rect -523 86 -517 483
+rect -479 86 -473 483
+rect -523 74 -473 86
+rect -357 483 -307 495
+rect -357 86 -351 483
+rect -313 86 -307 483
+rect -357 74 -307 86
+rect -191 483 -141 495
+rect -191 86 -185 483
+rect -147 86 -141 483
+rect -191 74 -141 86
+rect -25 483 25 495
+rect -25 86 -19 483
+rect 19 86 25 483
+rect -25 74 25 86
+rect 141 483 191 495
+rect 141 86 147 483
+rect 185 86 191 483
+rect 141 74 191 86
+rect 307 483 357 495
+rect 307 86 313 483
+rect 351 86 357 483
+rect 307 74 357 86
+rect 473 483 523 495
+rect 473 86 479 483
+rect 517 86 523 483
+rect 473 74 523 86
+rect -523 -86 -473 -74
+rect -523 -483 -517 -86
+rect -479 -483 -473 -86
+rect -523 -495 -473 -483
+rect -357 -86 -307 -74
+rect -357 -483 -351 -86
+rect -313 -483 -307 -86
+rect -357 -495 -307 -483
+rect -191 -86 -141 -74
+rect -191 -483 -185 -86
+rect -147 -483 -141 -86
+rect -191 -495 -141 -483
+rect -25 -86 25 -74
+rect -25 -483 -19 -86
+rect 19 -483 25 -86
+rect -25 -495 25 -483
+rect 141 -86 191 -74
+rect 141 -483 147 -86
+rect 185 -483 191 -86
+rect 141 -495 191 -483
+rect 307 -86 357 -74
+rect 307 -483 313 -86
+rect 351 -483 357 -86
+rect 307 -495 357 -483
+rect 473 -86 523 -74
+rect 473 -483 479 -86
+rect 517 -483 523 -86
+rect 473 -495 523 -483
+<< properties >>
+string FIXED_BBOX -646 -614 646 614
+string gencell sky130_fd_pr__res_xhigh_po_0p35
+string library sky130
+string parameters w 0.350 l 0.85 m 1 nx 7 wmin 0.350 lmin 0.50 rho 2000 val 5.932k dummy 0 dw 0.0 term 188.2 sterm 0.0 caplen 0 wmax 0.350 guard 1 glc 1 grc 0 gtc 0 gbc 0 compatible {sky130_fd_pr__res_xhigh_po_0p35  sky130_fd_pr__res_xhigh_po_0p69 sky130_fd_pr__res_xhigh_po_1p41  sky130_fd_pr__res_xhigh_po_2p85 sky130_fd_pr__res_xhigh_po_5p73} snake 0 full_metal 1 n_guard 0 hv_guard 0 vias 1 viagb 0 viagt 0 viagl 0 viagr 0
+<< end >>

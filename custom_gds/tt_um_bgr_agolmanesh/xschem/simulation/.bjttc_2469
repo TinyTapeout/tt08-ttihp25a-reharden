@@ -1,0 +1,15 @@
+** sch_path: /home/ttuser/bgrref/xschem/bjttc.sch
+**.subckt bjttc
+**** spice_prefix X
+Q1 ?1 VSS ?1 VSS ?1 VDD  sky130_fd_pr__pnp_05v5_W3p40L3p40 m=1
+**** end_element
+V1 ?1 VSS ?1 GND  3
+**** end_element
+V2 ?1 VDD ?1 GND  3
+**** end_element
+**** begin user architecture code
+ 
+** opencircuitdesign pdks install
+.lib /home/ttuser/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+ 

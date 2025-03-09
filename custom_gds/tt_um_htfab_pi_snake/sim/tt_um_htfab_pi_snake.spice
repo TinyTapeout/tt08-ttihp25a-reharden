@@ -1,0 +1,34 @@
+* NGSPICE file created from tt_um_htfab_pi_snake.ext - technology: sky130A
+
+.subckt snake VPWR VGND VOUT 0
+X0 VGND VOUT 0 sky130_fd_pr__res_high_po_0p35 l=19.460295k
+X1 VOUT VPWR 0 sky130_fd_pr__res_high_po_0p35 l=926.995
+C0 VPWR VOUT 0.177677f
+C1 VGND 0 0.422347f
+C2 VOUT 0 0.27047f
+C3 VPWR 0 0.284715f
+.ends
+
+.subckt tt_um_htfab_pi_snake clk ena rst_n ua[0] ua[1] ua[2] ua[3] ua[4] ua[5] ua[6]
++ ua[7] ui_in[0] ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6] ui_in[7] uio_in[0]
++ uio_in[1] uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7] uio_oe[0]
++ uio_oe[1] uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7] uio_out[0]
++ uio_out[1] uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7] uo_out[0]
++ uo_out[1] uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] VDPWR VGND
++ VAPWR
+Xsnake_0 VAPWR VGND ua[0] 0 snake
+C0 VDPWR VGND 12.9493f
+C1 VAPWR ua[0] 1.230661f
+C2 ua[1] 0 0.146962f
+C3 ua[2] 0 0.146962f
+C4 ua[3] 0 0.146962f
+C5 ua[4] 0 0.146962f
+C6 ua[5] 0 0.146962f
+C7 ua[6] 0 0.146962f
+C8 ua[7] 0 0.128006f
+C9 VDPWR 0 12.5343f
+C10 VGND 0 9.157657f
+C11 ua[0] 0 13.6429f
+C12 VAPWR 0 12.889194f
+.ends
+
