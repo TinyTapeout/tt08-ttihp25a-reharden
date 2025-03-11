@@ -10,7 +10,7 @@ module invgate(input A, output Y);
  `ifdef COCOTB_SIM
     assign #1 Y = ~A;
  `else
-    sky130_fd_sc_hd__inv_2 inv(.A(A),.Y(Y));
+    sg13g2_inv_2 inv(.A(A),.Y(Y));
  `endif
 endmodule
 
@@ -27,7 +27,7 @@ module andgate(input A,B, output Y);
   `ifdef COCOTB_SIM
   assign #1 Y = A&B;
   `else
-  sky130_fd_sc_hd__and2_2 and2(.A(A),.B(B),.X(Y));
+  sg13g2_and2_2 and2(.A(A),.B(B),.X(Y));
   `endif
 endmodule
 
@@ -35,7 +35,7 @@ module orgate(input A,B, output Y);
   `ifdef COCOTB_SIM
   assign #1 Y = A|B;
   `else
-  sky130_fd_sc_hd__or2_2 or2(.A(A),.B(B),.X(Y));
+  sg13g2_or2_2 or2(.A(A),.B(B),.X(Y));
   `endif
 endmodule
 
@@ -59,11 +59,12 @@ module dff(input d,rst_n,clk, output q);
         else
             q<=d;
   `else
-    sky130_fd_sc_hd__dfrtp_4 dfrtp(
+    sg13g2_dfrbp_2 dfrbp(
         .D(d),
         .RESET_B(rst_n),
         .CLK(clk),
-        .Q(q)
+        .Q(q),
+        .Q_N()
     );
   `endif
 endmodule

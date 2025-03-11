@@ -70,7 +70,7 @@ module INV (
   output wire out
 );
 
-  sky130_fd_sc_hd__inv_1 inv (
+  sg13g2_inv_1 inv (
     .A     (in),
     .Y     (out)
   );
