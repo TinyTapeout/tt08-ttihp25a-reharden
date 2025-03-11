@@ -26,6 +26,7 @@ project:
     - "pdk_generic/generic_maj3.v"
     - "pdk_sky130/sky130_fd_sc_hd__maj3.v"
     - "UartTop.v"
+    - "sky130_polyfill.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:

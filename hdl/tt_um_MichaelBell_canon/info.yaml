@@ -25,6 +25,7 @@ project:
     - "timing.sv"
     - "vga.sv"
     - "latch_reg.v"
+    - "sky130_polyfill.v"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 pinout:
